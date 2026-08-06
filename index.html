@@ -4,7 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yvan Dorantes | Portfolio</title>
-<meta name="description" content="Yvan Dorantes - Information Systems and Business Analytics graduate specializing in AI, data analytics, and IT.">
+<meta name="description" content="Yvan Dorantes - Information Systems and Business Analytics graduate specializing in full-stack development, AI, data analytics, IT, and cybersecurity.">
+<link rel="canonical" href="https://yvandor.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yvandor.github.io/">
+<meta property="og:site_name" content="Yvan Dorantes Portfolio">
+<meta property="og:title" content="Yvan Dorantes | Portfolio">
+<meta property="og:description" content="Information Systems and Business Analytics graduate specializing in full-stack development, AI, data analytics, IT, and cybersecurity.">
+<meta property="og:image" content="https://yvandor.github.io/assets/projects/finance-dashboard.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yvan Dorantes | Portfolio">
+<meta name="twitter:description" content="Information Systems and Business Analytics graduate specializing in full-stack development, AI, data analytics, IT, and cybersecurity.">
+<meta name="twitter:image" content="https://yvandor.github.io/assets/projects/finance-dashboard.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -47,14 +59,38 @@
 <section class="section" id="about">
 <div class="section-inner fade-in">
 <h2 class="section-title">About</h2>
-<p class="about-text">I'm an Information Systems and Business Analytics graduate from The University of Texas at El Paso with experience in IT support, security operations, and AI-powered software development. I enjoy building practical applications using Python, machine learning, and data analytics to solve real-world problems. I'm currently seeking opportunities in IT, business analytics, and AI where I can continue developing scalable, data-driven solutions while expanding my technical expertise.</p>
+<p class="about-text">I'm an Information Systems and Business Analytics graduate from The University of Texas at El Paso with experience in IT support, security operations, and full-stack, AI-powered software development. I enjoy building practical, production-style systems — from full-stack web applications and machine learning pipelines to self-hosted network infrastructure — using tools like Next.js, Python, and Linux to solve real-world problems. I'm currently seeking opportunities in software development, IT, and cybersecurity where I can continue building scalable, secure, data-driven solutions.</p>
 </div>
 </section>
 
 <section class="section" id="projects">
 <div class="section-inner fade-in">
 <h2 class="section-title">Projects</h2>
+
+<h3 class="projects-subheading">Independent Projects</h3>
 <div class="projects-grid">
+<article class="project-card featured">
+<div class="project-image">
+<img src="assets/projects/finance-dashboard.jpg" alt="Personal Finance Dashboard showing transaction overview with income, expense, and net summary cards" loading="lazy" width="1568" height="716">
+</div>
+<div class="project-body">
+<span class="featured-badge">Featured Project</span>
+<h3>Personal Finance Dashboard</h3>
+<p>Built a production-style full-stack personal finance application with transaction management, dashboard analytics, monthly budgets, PostgreSQL, Prisma, Server Actions, automated testing, Playwright end-to-end testing, accessibility, and GitHub Actions CI.</p>
+<div class="tech-tags">
+<span>Next.js</span><span>TypeScript</span><span>React</span><span>PostgreSQL</span><span>Prisma</span><span>Tailwind CSS</span><span>Zod</span><span>Vitest</span><span>Playwright</span><span>GitHub Actions</span>
+</div>
+<a class="project-link" href="https://github.com/yvandor/personal-finance-dashboard" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+</div>
+</article>
+<article class="project-card">
+<h3>WireGuard VPN Server</h3>
+<p>Configured a self-hosted WireGuard VPN server for secure remote access, including key-based authentication, IP forwarding, routing, firewall/NAT rules, SSH administration, and persistent service startup.</p>
+<div class="tech-tags">
+<span>WireGuard</span><span>Linux</span><span>Raspberry Pi</span><span>Networking</span><span>VPN</span><span>Cybersecurity</span><span>Firewall</span><span>NAT</span><span>SSH</span>
+</div>
+<a class="project-link" href="https://github.com/yvandor/wireguard-vpn-homelab" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+</article>
 <article class="project-card">
 <h3>AI Support Ticket Classifier</h3>
 <p>Developed a machine learning application that automatically classifies IT support tickets by both issue type and priority. Built an end-to-end NLP pipeline using TF-IDF vectorization and Logistic Regression to analyze over 28,000 real-world support tickets. The application predicts classifications with confidence scores and demonstrates practical AI applications for IT service management.</p>
@@ -71,6 +107,10 @@
 </div>
 <a class="project-link" href="https://github.com/yvandor/ai-resume-screener" target="_blank" rel="noopener">View on GitHub &rarr;</a>
 </article>
+</div>
+
+<h3 class="projects-subheading">Coursework Projects</h3>
+<div class="projects-grid">
 <article class="project-card">
 <h3>NFL Team Performance Correlation &amp; Regression Analysis</h3>
 <p>Analyzed ESPN's 2023 NFL Power Index dataset to explore relationships between team performance metrics — offense, defense, special teams, strength of schedule, win/loss record, and win probability trends. Built a correlation matrix visualized as a heatmap to identify which metrics most strongly relate to team success, then applied linear regression (scikit-learn) to model these relationships further. Combined with a custom web scraper to pull supplementary betting odds data for comparison against power index ratings.</p>
@@ -93,6 +133,7 @@
   <div class="tech-tags">
   <span>Kali Linux</span><span>Nmap</span><span>Wireshark</span><span>Metasploit</span><span>Netcat</span><span>Shodan</span><span>WebGoat</span><span>CrypTool 2</span><span>Threat Modeling</span>
   </div>
+  <p class="no-repo-note">Coursework — no public repository</p>
   </article>
 </div>
 </div>
@@ -103,8 +144,12 @@
 <h2 class="section-title">Skills</h2>
 <div class="skills-grid">
 <div class="skill-card">
-<h3>Programming</h3>
-<ul><li>Python</li><li>SQL</li></ul>
+<h3>Full-Stack Development</h3>
+<ul><li>TypeScript</li><li>JavaScript</li><li>Next.js</li><li>React</li><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Prisma</li><li>Tailwind CSS</li><li>Zod</li></ul>
+</div>
+<div class="skill-card">
+<h3>Testing and DevOps</h3>
+<ul><li>Vitest</li><li>Playwright</li><li>GitHub Actions</li><li>Git</li><li>GitHub</li><li>Visual Studio Code</li></ul>
 </div>
 <div class="skill-card">
 <h3>Machine Learning and AI</h3>
@@ -115,16 +160,12 @@
 <ul><li>Pandas</li><li>NumPy</li><li>Power BI</li><li>Tableau</li><li>Microsoft Excel</li><li>Microsoft Access</li></ul>
 </div>
 <div class="skill-card">
-<h3>IT and Systems</h3>
-<ul><li>Windows 10/11</li><li>Linux</li><li>Microsoft 365</li><li>Technical Support</li><li>Network Troubleshooting</li><li>Active Directory (basic)</li><li>Ticketing Systems</li></ul>
-</div>
-<div class="skill-card">
 <h3>Networking and Security</h3>
-<ul><li>Wireshark</li><li>Nmap</li><li>TCP/IP</li><li>DNS</li><li>DHCP</li><li>Cybersecurity Fundamentals</li></ul>
+<ul><li>WireGuard</li><li>VPN</li><li>Firewall / NAT</li><li>Wireshark</li><li>Nmap</li><li>TCP/IP</li><li>DNS</li><li>DHCP</li><li>Cybersecurity Fundamentals</li></ul>
 </div>
 <div class="skill-card">
-<h3>Development Tools</h3>
-<ul><li>Git</li><li>GitHub</li><li>Visual Studio Code</li></ul>
+<h3>IT and Systems</h3>
+<ul><li>Windows 10/11</li><li>Linux</li><li>Raspberry Pi</li><li>Microsoft 365</li><li>Technical Support</li><li>Network Troubleshooting</li><li>Active Directory (basic)</li><li>Ticketing Systems</li></ul>
 </div>
 </div>
 </div>
